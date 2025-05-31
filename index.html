@@ -9,7 +9,7 @@
     <meta property="og:description" content="Комплексний маркетинг, SMM та брендинг для вашого бізнесу. Розвиваємо бренди з 2020 року.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://nexavision.online/">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1552664730-d307ca884978">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1551288049-bebda4e38f71">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     
@@ -17,11 +17,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
-            --primary: #2563eb;
-            --secondary: #1e40af;
-            --accent: #3b82f6;
-            --dark: #1f2937;
-            --light: #f9fafb;
+            --primary: #4f46e5;
+            --secondary: #3730a3;
+            --accent: #6366f1;
+            --dark: #111827;
+            --light: #f3f4f6;
         }
         
         body {
@@ -55,7 +55,7 @@
         
         /* Hero */
         .hero {
-            background: url('https://images.unsplash.com/photo-1552664730-d307ca884978') center/cover;
+            background: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71') center/cover;
             padding: 5rem 0;
             color: white;
             text-align: center;
@@ -82,31 +82,65 @@
             padding: 4rem 0;
         }
         
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
         .service-card {
             background: white;
             border-radius: 8px;
             padding: 2rem;
             box-shadow: 0 4px 6px rgba(0,0,0,0.05);
             transition: transform 0.3s;
+            text-align: center;
         }
         
         .service-card:hover {
             transform: translateY(-5px);
         }
         
+        .service-card i {
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+        
         /* Cases */
+        .cases {
+            padding: 4rem 0;
+            background: white;
+        }
+        
         .case-study {
             border-left: 4px solid var(--accent);
             padding-left: 1rem;
+            margin-bottom: 2rem;
         }
         
         /* Team */
+        .team {
+            padding: 4rem 0;
+        }
+        
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-top: 2rem;
+        }
+        
+        .team-member {
+            text-align: center;
+        }
+        
         .team-member img {
-            width: 150px;
-            height: 150px;
+            width: 180px;
+            height: 180px;
             border-radius: 50%;
             object-fit: cover;
             border: 3px solid var(--accent);
+            margin-bottom: 1rem;
         }
         
         /* Footer */
@@ -114,6 +148,34 @@
             background: var(--dark);
             color: white;
             padding: 3rem 0 1.5rem;
+        }
+        
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .social-links a {
+            color: white;
+            margin-right: 1rem;
+            font-size: 1.2rem;
+        }
+        
+        .cta-button {
+            background: var(--accent);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 6px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        
+        .cta-button:hover {
+            background: var(--secondary);
         }
     </style>
 </head>
@@ -126,9 +188,9 @@
     
     <section class="hero">
         <div class="container hero-content">
-            <h1>Маркетинг, який працює</h1>
-            <p>Створюємо стратегії, які приносять клієнтів</p>
-            <button class="cta-button">Зв'язатися</button>
+            <h1>Інноваційний маркетинг для вашого бізнесу</h1>
+            <p>Стратегії, які дійсно працюють</p>
+            <button class="cta-button">Обговорити проект</button>
         </div>
     </section>
     
@@ -136,19 +198,19 @@
         <h2>Наші послуги</h2>
         <div class="services-grid">
             <div class="service-card">
-                <i class="fas fa-bullseye fa-2x"></i>
-                <h3>Цільовий маркетинг</h3>
-                <p>Точні стратегії для вашої ЦА</p>
+                <i class="fas fa-chart-line fa-3x"></i>
+                <h3>Діджитал-стратегії</h3>
+                <p>Комплексні рішення для онлайн-просування</p>
             </div>
             <div class="service-card">
-                <i class="fas fa-hashtag fa-2x"></i>
-                <h3>SMM</h3>
-                <p>Просування в соцмережах</p>
+                <i class="fas fa-users fa-3x"></i>
+                <h3>SMM просування</h3>
+                <p>Ефективне ведення соціальних мереж</p>
             </div>
             <div class="service-card">
-                <i class="fas fa-paint-brush fa-2x"></i>
+                <i class="fas fa-palette fa-3x"></i>
                 <h3>Брендинг</h3>
-                <p>Створення унікального образу</p>
+                <p>Створення унікального іміджу компанії</p>
             </div>
         </div>
     </section>
@@ -156,18 +218,24 @@
     <section class="cases container">
         <h2>Наші кейси</h2>
         <div class="case-study">
-            <h3>Кав'ярня "Аромат"</h3>
-            <p>Збільшили клієнтопотік на 120% за 3 місяці</p>
+            <h3>Ресторан "Смаколик"</h3>
+            <p>Збільшили середній чек на 40% через нову маркетингову стратегію</p>
+            <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5" alt="Кейс ресторану" style="width:100%; max-height:300px; object-fit:cover; border-radius:8px; margin-top:1rem;">
         </div>
     </section>
     
     <section class="team container">
-        <h2>Команда</h2>
+        <h2>Наша команда</h2>
         <div class="team-grid">
             <div class="team-member">
-                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a" alt="Марк Петров">
-                <h3>Марк Петров</h3>
-                <p>CEO, засновник</p>
+                <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e" alt="Анна Коваленко">
+                <h3>Анна Коваленко</h3>
+                <p>CEO, засновниця</p>
+            </div>
+            <div class="team-member">
+                <img src="https://images.unsplash.com/photo-1562788869-4ed32648eb72" alt="Олег Сидоренко">
+                <h3>Олег Сидоренко</h3>
+                <p>Креативний директор</p>
             </div>
         </div>
     </section>
@@ -177,17 +245,24 @@
             <div class="footer-grid">
                 <div>
                     <h3>Контакти</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Київ, вул. Хрещатик, 15</p>
                     <p><i class="fas fa-phone"></i> +380 99 123 4567</p>
                     <p><i class="fas fa-envelope"></i> info@nexavision.online</p>
                 </div>
                 <div>
                     <h3>Соцмережі</h3>
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i> Facebook</a><br>
+                    <a href="#"><i class="fab fa-instagram"></i> Instagram</a><br>
+                    <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                </div>
+                <div>
+                    <h3>Графік роботи</h3>
+                    <p>Пн-Пт: 9:00 - 18:00</p>
+                    <p>Сб-Нд: вихідний</p>
                 </div>
             </div>
-            <div class="copyright">
-                <p>© 2023 Nexavision. Всі права захищені.</p>
+            <div class="copyright" style="text-align:center; margin-top:2rem;">
+                <p>© 2023 Nexavision Marketing Agency. Всі права захищені.</p>
             </div>
         </div>
     </footer>
