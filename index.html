@@ -1,125 +1,195 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="uk">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="NexaVision - Digital Marketing & Creative Agency" />
-  <title>NexaVision Agency</title>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet" />
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Manrope', sans-serif;
-    }
-
-    body {
-      background: linear-gradient(to bottom, #0f172a, #1e293b);
-      color: #fff;
-      line-height: 1.6;
-    }
-
-    header {
-      padding: 60px 20px;
-      text-align: center;
-      background: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d') no-repeat center/cover;
-      background-blend-mode: multiply;
-      background-color: #1e293b;
-    }
-
-    header h1 {
-      font-size: 48px;
-      font-weight: 800;
-      color: #fff;
-    }
-
-    header p {
-      font-size: 18px;
-      margin-top: 10px;
-      color: #cbd5e1;
-    }
-
-    section {
-      max-width: 960px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-
-    h2 {
-      font-size: 28px;
-      margin-bottom: 16px;
-      color: #93c5fd;
-    }
-
-    .services ul,
-    .team ul {
-      list-style: none;
-      padding-left: 0;
-    }
-
-    .services li,
-    .team li {
-      background: #334155;
-      padding: 16px;
-      margin-bottom: 12px;
-      border-radius: 12px;
-    }
-
-    footer {
-      background: #0f172a;
-      text-align: center;
-      padding: 30px 20px;
-      font-size: 14px;
-      color: #94a3b8;
-      margin-top: 40px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Nexavision | Маркетингове агенство в Україні">
+    <meta property="og:description" content="Комплексний маркетинг, SMM та брендинг для вашого бізнесу. Розвиваємо бренди з 2020 року.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nexavision.online/">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1552664730-d307ca884978">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    
+    <title>Nexavision | Маркетингове агенство</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #2563eb;
+            --secondary: #1e40af;
+            --accent: #3b82f6;
+            --dark: #1f2937;
+            --light: #f9fafb;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--dark);
+            line-height: 1.6;
+            background-color: var(--light);
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        /* Header */
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 1.5rem 0;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+        
+        /* Hero */
+        .hero {
+            background: url('https://images.unsplash.com/photo-1552664730-d307ca884978') center/cover;
+            padding: 5rem 0;
+            color: white;
+            text-align: center;
+            position: relative;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.6);
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        /* Services */
+        .services {
+            padding: 4rem 0;
+        }
+        
+        .service-card {
+            background: white;
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        /* Cases */
+        .case-study {
+            border-left: 4px solid var(--accent);
+            padding-left: 1rem;
+        }
+        
+        /* Team */
+        .team-member img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--accent);
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 3rem 0 1.5rem;
+        }
+    </style>
 </head>
-
 <body>
-  <header>
-    <h1>NexaVision Agency</h1>
-    <p>Creative Digital Solutions for Modern Businesses</p>
-  </header>
-
-  <section class="about">
-    <h2>About Us</h2>
-    <p>NexaVision is a Ukrainian-based marketing agency delivering powerful branding, digital strategy, and advertising services for businesses of all sizes. We focus on innovation and measurable results.</p>
-  </section>
-
-  <section class="services">
-    <h2>Our Services</h2>
-    <ul>
-      <li>Performance Marketing & Targeted Ads</li>
-      <li>Website & E-commerce Development</li>
-      <li>Brand Identity & Design</li>
-      <li>Social Media Strategy</li>
-      <li>SEO & Analytics</li>
-    </ul>
-  </section>
-
-  <section class="team">
-    <h2>Meet the Team</h2>
-    <ul>
-      <li><strong>Olena Shevchenko</strong> – CEO & Founder</li>
-      <li><strong>Dmytro Koval</strong> – Head of Digital</li>
-      <li><strong>Iryna Melnyk</strong> – Creative Director</li>
-      <li><strong>Serhii Bondarenko</strong> – Lead Developer</li>
-    </ul>
-  </section>
-
-  <section class="contacts">
-    <h2>Contact Us</h2>
-    <p>Email: info@nexavision.online</p>
-    <p>Phone: +38 068 000 0000</p>
-    <p>Address: Kyiv, Ukraine</p>
-  </section>
-
-  <footer>
-    &copy; 2025 NexaVision. All rights reserved.
-  </footer>
+    <header>
+        <div class="container">
+            <div class="logo">Nexavision</div>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>Маркетинг, який працює</h1>
+            <p>Створюємо стратегії, які приносять клієнтів</p>
+            <button class="cta-button">Зв'язатися</button>
+        </div>
+    </section>
+    
+    <section class="services container">
+        <h2>Наші послуги</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fas fa-bullseye fa-2x"></i>
+                <h3>Цільовий маркетинг</h3>
+                <p>Точні стратегії для вашої ЦА</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-hashtag fa-2x"></i>
+                <h3>SMM</h3>
+                <p>Просування в соцмережах</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-paint-brush fa-2x"></i>
+                <h3>Брендинг</h3>
+                <p>Створення унікального образу</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="cases container">
+        <h2>Наші кейси</h2>
+        <div class="case-study">
+            <h3>Кав'ярня "Аромат"</h3>
+            <p>Збільшили клієнтопотік на 120% за 3 місяці</p>
+        </div>
+    </section>
+    
+    <section class="team container">
+        <h2>Команда</h2>
+        <div class="team-grid">
+            <div class="team-member">
+                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a" alt="Марк Петров">
+                <h3>Марк Петров</h3>
+                <p>CEO, засновник</p>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3>Контакти</h3>
+                    <p><i class="fas fa-phone"></i> +380 99 123 4567</p>
+                    <p><i class="fas fa-envelope"></i> info@nexavision.online</p>
+                </div>
+                <div>
+                    <h3>Соцмережі</h3>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2023 Nexavision. Всі права захищені.</p>
+            </div>
+        </div>
+    </footer>
 </body>
-
 </html>
